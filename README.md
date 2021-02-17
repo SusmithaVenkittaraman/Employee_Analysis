@@ -28,10 +28,11 @@ When analyzing the salaries, it was found that assistant engineers, engineers, a
 # Getting Started
 
 1. Open employee_SQL folder.
-2. Please find the entity relationship diagrams inside the data_modelling folder
-3. The schema.sql is inside the data_engineering folder. There is also a text file that has the schema.
-4. Open the data analysis folder to find the queries.
-5. The Spurious salaries directory inside the data analysis has the jupyter notebook with the plots.
+2. All the CSV's used for the analysis is in the resources folder.
+3. Please find the entity relationship diagrams inside the data_modelling folder
+4. The schema.sql is inside the data_engineering folder. There is also a text file that has the schema.
+5. Open the data analysis folder to find the queries.
+6. The Spurious salaries directory inside the data analysis has the jupyter notebook with the plots.
 **------note------**
 To run the jupyter notebook please put your password in the **config.py** file for connecting the database.
 
