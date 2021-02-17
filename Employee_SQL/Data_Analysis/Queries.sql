@@ -2,7 +2,7 @@
 
 select e.emp_no,e.last_name,e.first_name,e.sex,s.salary
 from employees as e
-join salaries as s
+left join salaries as s
 on e.emp_no=s.emp_no;
 
 --2.List first name, last name, and hire date for employees who were hired in 1986.
@@ -48,7 +48,7 @@ left join dept_emp as de
 on e.emp_no=de.emp_no
 left join departments as d
 on d.dept_no=de.dept_no
-where d.dept_name='Sales';
+where d.dept_name like '%Sales%';
 
 --7.List all employees in the Sales and Development departments, 
 --including their employee number, last name, first name, and department name.
@@ -64,7 +64,7 @@ where d.dept_name='Sales' or d.dept_name='Development' ;
 --8.In descending order, list the frequency count of employee last names,
 --i.e., how many employees share each last name.
 
-select last_name,count(last_name) as count_of_employees
+select last_name,count(emp_no) as count_of_employees
 from employees
 group by last_name
 order by count_of_employees desc,last_name;
